@@ -12,5 +12,4 @@ app = FastAPI(
 def give_route(start_point: str, end_point: str):
     start_point1 = get_location(start_point)
     end_point1 = get_location(end_point)
-    print(get_route(start_point1, end_point1))
     return get_route(start_point1, end_point1)
